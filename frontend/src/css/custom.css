@@ -1,0 +1,134 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the classic template styles here. */
+:root {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-code-font-size: 95%;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+html[data-theme='dark'] .docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Custom styles for textbook content */
+.textbook-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.textbook-chapter {
+  margin-bottom: 2rem;
+}
+
+.textbook-section {
+  margin-bottom: 1.5rem;
+}
+
+.textbook-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+  padding: 1rem 0;
+  border-top: 1px solid var(--ifm-color-emphasis-300);
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.chat-interface {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 350px;
+  max-height: 500px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.chat-header {
+  padding: 0.75rem;
+  background-color: var(--ifm-color-primary);
+  color: white;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+  max-height: 300px;
+}
+
+.chat-input-area {
+  display: flex;
+  padding: 0.75rem;
+  border-top: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.chat-input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 4px;
+  margin-right: 0.5rem;
+}
+
+.chat-button {
+  padding: 0.5rem 1rem;
+  background-color: var(--ifm-color-primary);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.chat-button:hover {
+  background-color: var(--ifm-color-primary-dark);
+}
+
+.message-user {
+  text-align: right;
+  margin-bottom: 0.5rem;
+}
+
+.message-assistant {
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+.message-bubble {
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  max-width: 80%;
+}
+
+.message-user .message-bubble {
+  background-color: var(--ifm-color-primary-light);
+}
+
+.message-assistant .message-bubble {
+  background-color: var(--ifm-color-emphasis-200);
+}

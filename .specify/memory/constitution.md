@@ -1,55 +1,45 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!-- SYNC IMPACT REPORT
+Version change: N/A -> 1.0.0
+Modified principles: N/A
+Added sections: All principles and sections added
+Removed sections: None
+Templates requiring updates: N/A
+Follow-up TODOs: None
+-->
+
+# Physical AI & Humanoid Robotics — Essentials Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Simplicity
+Keep all implementations simple and minimal. Solutions must be lightweight and avoid unnecessary complexity. Every feature should have a clear, essential purpose that contributes to the core learning objectives.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Accuracy
+All content and code examples must be technically accurate and verified. Information presented in the textbook and implemented in the RAG system must be factually correct and represent best practices in Physical AI and Humanoid Robotics.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Minimalism
+Adhere to minimal viable implementations. Focus on core concepts without extraneous features. Prioritize essential functionality that serves the educational purpose over comprehensive but complex implementations.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Fast Builds
+Maintain fast build and deployment cycles. All components (Docusaurus UI, RAG backend, simulation interfaces) must be optimized for quick iteration and development cycles.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Free-tier Architecture
+Design all systems to operate within free-tier constraints. This includes minimal computational requirements, lightweight embeddings, and architectures that don't require expensive GPU resources.
 
-### [PRINCIPLE_6_NAME]
+### VI. Educational Focus
 
+All development must prioritize educational value and learning outcomes. Every feature should enhance the student's understanding of Physical AI and Humanoid Robotics concepts.
 
-[PRINCIPLE__DESCRIPTION]
+## Additional Constraints
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+Technology stack requirements: Docusaurus for textbook UI, Qdrant + Neon + FastAPI for RAG chatbot, ROS 2 for robotics fundamentals, Gazebo/Isaac for digital twin simulation. All components must be compatible with free-tier hosting and minimal computational requirements. No heavy GPU usage allowed; implementations must work with CPU-based processing where possible.
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+## Development Workflow
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+All code must be testable and documented. Each chapter implementation requires functional validation. Code reviews must verify compliance with simplicity and minimalism principles. Pull requests must demonstrate educational value and technical accuracy.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This constitution governs all development activities for the Physical AI & Humanoid Robotics textbook project. All code, documentation, and architectural decisions must comply with these principles. Amendments require explicit documentation and approval from project stakeholders.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-12-17 | **Last Amended**: 2025-12-17
