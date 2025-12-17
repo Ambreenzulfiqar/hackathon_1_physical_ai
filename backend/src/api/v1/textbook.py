@@ -19,19 +19,17 @@ async def get_all_chapters(
         content_service = ContentService(db)
         chapters = await content_service.get_all_chapters()
 
-        return {
-            "chapters": [
-                {
-                    "id": chapter.id,
-                    "title": chapter.title,
-                    "slug": chapter.slug,
-                    "order": chapter.order,
-                    "word_count": chapter.word_count,
-                    "estimated_reading_time": chapter.estimated_reading_time
-                }
-                for chapter in chapters
-            ]
-        }
+        return [
+            {
+                "id": chapter.id,
+                "title": chapter.title,
+                "slug": chapter.slug,
+                "order": chapter.order,
+                "word_count": chapter.word_count,
+                "estimated_reading_time": chapter.estimated_reading_time
+            }
+            for chapter in chapters
+        ]
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error retrieving chapters: {str(e)}")
 

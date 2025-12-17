@@ -1,7 +1,6 @@
 from sqlalchemy import create_engine
 from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine
 from sqlalchemy.orm import sessionmaker
-from sqlalchemy.pool import QueuePool
 from typing import AsyncGenerator
 import logging
 
@@ -10,7 +9,6 @@ from .settings import settings
 # Create async database engine
 async_engine = create_async_engine(
     settings.database_url,
-    poolclass=QueuePool,
     pool_size=5,
     max_overflow=10,
     pool_pre_ping=True,
@@ -21,7 +19,6 @@ async_engine = create_async_engine(
 # Create sync database engine (useful for migrations)
 sync_engine = create_engine(
     settings.database_url.replace('+asyncpg', ''),
-    poolclass=QueuePool,
     pool_size=5,
     max_overflow=10,
     pool_pre_ping=True,
@@ -31,8 +28,8 @@ sync_engine = create_engine(
 
 # Create async session maker
 AsyncSessionLocal = sessionmaker(
-    async_session_class=AsyncSession,
     bind=async_engine,
+    class_=AsyncSession,
     expire_on_commit=False
 )
 

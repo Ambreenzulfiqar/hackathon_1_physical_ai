@@ -1,12 +1,9 @@
-from pydantic_settings import Settings
+from pydantic_settings import BaseSettings, SettingsConfigDict
 from typing import Optional
+from pydantic import Field
 import os
-from dotenv import load_dotenv
 
-# Load environment variables from .env file
-load_dotenv()
-
-class Settings(Settings):
+class Settings(BaseSettings):
     # Application settings
     app_name: str = "Textbook RAG Backend"
     app_version: str = "0.1.0"
@@ -18,16 +15,16 @@ class Settings(Settings):
     allowed_origins: list = ["*"]  # In production, specify actual origins
 
     # Database settings
-    database_url: str = os.getenv("DATABASE_URL", "postgresql+asyncpg://user:password@localhost/textbook_db")
+    database_url: str = Field(default="sqlite+aiosqlite:///./textbook.db")
 
     # Qdrant settings
-    qdrant_url: str = os.getenv("QDRANT_URL", "http://localhost:6333")
-    qdrant_api_key: Optional[str] = os.getenv("QDRANT_API_KEY")
+    qdrant_url: str = Field(default="http://localhost:6333")
+    qdrant_api_key: Optional[str] = Field(default=None)
 
     # OpenAI settings
-    openai_api_key: str = os.getenv("OPENAI_API_KEY", "")
-    embedding_model: str = os.getenv("EMBEDDING_MODEL", "text-embedding-3-small")
-    openai_model: str = os.getenv("OPENAI_MODEL", "gpt-3.5-turbo")
+    openai_api_key: str = Field(default="")
+    embedding_model: str = Field(default="text-embedding-3-small")
+    openai_model: str = Field(default="gpt-3.5-turbo")
 
     # Rate limiting
     rate_limit_anonymous_requests: int = 100  # per hour
@@ -46,9 +43,11 @@ class Settings(Settings):
     # Session settings
     session_timeout: int = 1800  # 30 minutes in seconds
 
-    class Config:
-        env_file = ".env"
-        case_sensitive = True
+    model_config = SettingsConfigDict(
+        env_file=".env",
+        env_file_encoding="utf-8",
+        extra="ignore"
+    )
 
 # Create a single instance of settings
 settings = Settings()
