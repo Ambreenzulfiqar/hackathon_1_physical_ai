@@ -1,0 +1,28 @@
+{
+  "id": "ros2-fundamentals",
+  "title": "ROS 2 Fundamentals",
+  "description": "Introduction to ROS 2",
+  "source": "@site/docs/03-ros2-fundamentals.md",
+  "sourceDirName": ".",
+  "slug": "/ros2-fundamentals",
+  "permalink": "/docs/ros2-fundamentals",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-username/textbook-frontend/edit/main/docs/03-ros2-fundamentals.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3,
+    "title": "ROS 2 Fundamentals"
+  },
+  "sidebar": "textbookSidebar",
+  "previous": {
+    "title": "Basics of Humanoid Robotics",
+    "permalink": "/docs/basics-humanoid-robotics"
+  },
+  "next": {
+    "title": "Digital Twin Simulation (Gazebo + Isaac)",
+    "permalink": "/docs/digital-twin-simulation"
+  }
+}

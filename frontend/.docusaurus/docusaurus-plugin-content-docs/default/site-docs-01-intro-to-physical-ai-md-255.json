@@ -1,0 +1,24 @@
+{
+  "id": "intro-to-physical-ai",
+  "title": "Introduction to Physical AI",
+  "description": "Overview",
+  "source": "@site/docs/01-intro-to-physical-ai.md",
+  "sourceDirName": ".",
+  "slug": "/intro-to-physical-ai",
+  "permalink": "/docs/intro-to-physical-ai",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-username/textbook-frontend/edit/main/docs/01-intro-to-physical-ai.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "title": "Introduction to Physical AI"
+  },
+  "sidebar": "textbookSidebar",
+  "next": {
+    "title": "Basics of Humanoid Robotics",
+    "permalink": "/docs/basics-humanoid-robotics"
+  }
+}

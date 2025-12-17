@@ -1,0 +1,28 @@
+{
+  "id": "vision-language-action",
+  "title": "Vision-Language-Action Systems",
+  "description": "Introduction to Vision-Language-Action Systems",
+  "source": "@site/docs/05-vision-language-action.md",
+  "sourceDirName": ".",
+  "slug": "/vision-language-action",
+  "permalink": "/docs/vision-language-action",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-username/textbook-frontend/edit/main/docs/05-vision-language-action.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5,
+    "title": "Vision-Language-Action Systems"
+  },
+  "sidebar": "textbookSidebar",
+  "previous": {
+    "title": "Digital Twin Simulation (Gazebo + Isaac)",
+    "permalink": "/docs/digital-twin-simulation"
+  },
+  "next": {
+    "title": "Capstone: Simple AI-Robot Pipeline",
+    "permalink": "/docs/capstone-ai-robot-pipeline"
+  }
+}

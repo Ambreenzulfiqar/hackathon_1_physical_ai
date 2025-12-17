@@ -1,0 +1,24 @@
+{
+  "id": "capstone-ai-robot-pipeline",
+  "title": "Capstone: Simple AI-Robot Pipeline",
+  "description": "Overview",
+  "source": "@site/docs/06-capstone-ai-robot-pipeline.md",
+  "sourceDirName": ".",
+  "slug": "/capstone-ai-robot-pipeline",
+  "permalink": "/docs/capstone-ai-robot-pipeline",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-username/textbook-frontend/edit/main/docs/06-capstone-ai-robot-pipeline.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {
+    "sidebar_position": 6,
+    "title": "Capstone: Simple AI-Robot Pipeline"
+  },
+  "sidebar": "textbookSidebar",
+  "previous": {
+    "title": "Vision-Language-Action Systems",
+    "permalink": "/docs/vision-language-action"
+  }
+}

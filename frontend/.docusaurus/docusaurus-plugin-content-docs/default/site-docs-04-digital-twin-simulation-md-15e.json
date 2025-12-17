@@ -1,0 +1,28 @@
+{
+  "id": "digital-twin-simulation",
+  "title": "Digital Twin Simulation (Gazebo + Isaac)",
+  "description": "Introduction to Digital Twin Simulation",
+  "source": "@site/docs/04-digital-twin-simulation.md",
+  "sourceDirName": ".",
+  "slug": "/digital-twin-simulation",
+  "permalink": "/docs/digital-twin-simulation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-username/textbook-frontend/edit/main/docs/04-digital-twin-simulation.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4,
+    "title": "Digital Twin Simulation (Gazebo + Isaac)"
+  },
+  "sidebar": "textbookSidebar",
+  "previous": {
+    "title": "ROS 2 Fundamentals",
+    "permalink": "/docs/ros2-fundamentals"
+  },
+  "next": {
+    "title": "Vision-Language-Action Systems",
+    "permalink": "/docs/vision-language-action"
+  }
+}

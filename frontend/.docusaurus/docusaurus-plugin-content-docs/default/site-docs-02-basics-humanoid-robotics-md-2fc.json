@@ -1,0 +1,28 @@
+{
+  "id": "basics-humanoid-robotics",
+  "title": "Basics of Humanoid Robotics",
+  "description": "Introduction to Humanoid Robotics",
+  "source": "@site/docs/02-basics-humanoid-robotics.md",
+  "sourceDirName": ".",
+  "slug": "/basics-humanoid-robotics",
+  "permalink": "/docs/basics-humanoid-robotics",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/your-username/textbook-frontend/edit/main/docs/02-basics-humanoid-robotics.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2,
+    "title": "Basics of Humanoid Robotics"
+  },
+  "sidebar": "textbookSidebar",
+  "previous": {
+    "title": "Introduction to Physical AI",
+    "permalink": "/docs/intro-to-physical-ai"
+  },
+  "next": {
+    "title": "ROS 2 Fundamentals",
+    "permalink": "/docs/ros2-fundamentals"
+  }
+}
