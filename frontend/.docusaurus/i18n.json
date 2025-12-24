@@ -1,8 +1,7 @@
 {
   "defaultLocale": "en",
   "locales": [
-    "en",
-    "ur"
+    "en"
   ],
   "path": "i18n",
   "currentLocale": "en",
@@ -13,19 +12,9 @@
       "htmlLang": "en",
       "calendar": "gregory",
       "path": "en",
-      "translate": false,
-      "url": "https://your-textbook-domain.com",
+      "translate": true,
+      "url": "https://hackathon-1-physical-ai-olive.vercel.app",
       "baseUrl": "/"
-    },
-    "ur": {
-      "label": "اردو",
-      "direction": "rtl",
-      "htmlLang": "ur",
-      "calendar": "gregory",
-      "path": "ur",
-      "translate": false,
-      "url": "https://your-textbook-domain.com",
-      "baseUrl": "/ur/"
     }
   }
 }

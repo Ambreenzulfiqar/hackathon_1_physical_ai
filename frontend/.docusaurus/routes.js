@@ -38,27 +38,22 @@ export default [
     exact: true
   },
   {
-    path: '/Home',
-    component: ComponentCreator('/Home', '6d6'),
+    path: '/index_fixed',
+    component: ComponentCreator('/index_fixed', '826'),
     exact: true
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', 'f24'),
+    component: ComponentCreator('/docs', '605'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', 'b87'),
+        component: ComponentCreator('/docs', '06e'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '997'),
+            component: ComponentCreator('/docs', '914'),
             routes: [
-              {
-                path: '/docs/',
-                component: ComponentCreator('/docs/', '0ee'),
-                exact: true
-              },
               {
                 path: '/docs/basics-humanoid-robotics',
                 component: ComponentCreator('/docs/basics-humanoid-robotics', 'bcb'),
@@ -74,6 +69,12 @@ export default [
               {
                 path: '/docs/digital-twin-simulation',
                 component: ComponentCreator('/docs/digital-twin-simulation', 'bd4'),
+                exact: true,
+                sidebar: "textbookSidebar"
+              },
+              {
+                path: '/docs/intro',
+                component: ComponentCreator('/docs/intro', '362'),
                 exact: true,
                 sidebar: "textbookSidebar"
               },
@@ -100,6 +101,11 @@ export default [
         ]
       }
     ]
+  },
+  {
+    path: '/',
+    component: ComponentCreator('/', 'e5f'),
+    exact: true
   },
   {
     path: '*',

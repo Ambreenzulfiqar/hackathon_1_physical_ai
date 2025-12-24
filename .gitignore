@@ -137,3 +137,8 @@ venv.bak/
 .dmypy.json
 dmypy.json
 .pyre/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3

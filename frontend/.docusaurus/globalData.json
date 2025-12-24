@@ -8,7 +8,7 @@
           "label": "Next",
           "isLast": true,
           "path": "/docs",
-          "mainDocId": "index",
+          "mainDocId": "intro",
           "docs": [
             {
               "id": "basics-humanoid-robotics",
@@ -26,8 +26,9 @@
               "sidebar": "textbookSidebar"
             },
             {
-              "id": "index",
-              "path": "/docs/"
+              "id": "intro",
+              "path": "/docs/intro",
+              "sidebar": "textbookSidebar"
             },
             {
               "id": "intro-to-physical-ai",
@@ -49,8 +50,8 @@
           "sidebars": {
             "textbookSidebar": {
               "link": {
-                "path": "/docs/intro-to-physical-ai",
-                "label": "intro-to-physical-ai"
+                "path": "/docs/intro",
+                "label": "intro"
               }
             }
           }

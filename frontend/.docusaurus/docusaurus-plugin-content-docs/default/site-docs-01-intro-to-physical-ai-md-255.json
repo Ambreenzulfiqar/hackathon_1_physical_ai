@@ -8,7 +8,6 @@
   "permalink": "/docs/intro-to-physical-ai",
   "draft": false,
   "unlisted": false,
-  "editUrl": "https://github.com/your-username/textbook-frontend/edit/main/docs/01-intro-to-physical-ai.md",
   "tags": [],
   "version": "current",
   "sidebarPosition": 1,
@@ -17,6 +16,10 @@
     "title": "Introduction to Physical AI"
   },
   "sidebar": "textbookSidebar",
+  "previous": {
+    "title": "Introduction",
+    "permalink": "/docs/intro"
+  },
   "next": {
     "title": "Basics of Humanoid Robotics",
     "permalink": "/docs/basics-humanoid-robotics"

@@ -42,29 +42,25 @@
       "plugin": "plugin---docusaurus-debugb-38-ad3"
     }
   },
-  "/Home-6d6": {
-    "__comp": "__comp---site-src-pages-home-js-7-fb-f25",
+  "/index_fixed-826": {
+    "__comp": "__comp---site-src-pages-index-fixed-tsx-58-a-fa0",
     "__context": {
-      "plugin": "plugin---homea-74-884"
+      "plugin": "plugin---index-fixeda-74-17d"
     },
-    "config": "config---home-5-e-9-0a8"
+    "config": "config---index-fixed-5-e-9-1f0"
   },
-  "/docs-f24": {
+  "/docs-605": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---docsaba-d7c"
     }
   },
-  "/docs-b87": {
+  "/docs-06e": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---docs-005-788"
   },
-  "/docs-997": {
+  "/docs-914": {
     "__comp": "__comp---theme-doc-roota-94-67a"
-  },
-  "/docs/-0ee": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-c-37-4d0"
   },
   "/docs/basics-humanoid-robotics-bcb": {
     "__comp": "__comp---theme-doc-item-178-a40",
@@ -78,6 +74,10 @@
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-digital-twin-simulation-15-e-c60"
   },
+  "/docs/intro-362": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-intro-0-e-3-be1"
+  },
   "/docs/intro-to-physical-ai-0f0": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-intro-to-physical-ai-255-adc"
@@ -89,5 +89,12 @@
   "/docs/vision-language-action-775": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-vision-language-action-893-0dc"
+  },
+  "/-e5f": {
+    "__comp": "__comp---site-src-pages-index-tsx-1-df-d3e",
+    "__context": {
+      "plugin": "plugin---index-fixeda-74-17d"
+    },
+    "config": "config---index-fixed-5-e-9-1f0"
   }
 }

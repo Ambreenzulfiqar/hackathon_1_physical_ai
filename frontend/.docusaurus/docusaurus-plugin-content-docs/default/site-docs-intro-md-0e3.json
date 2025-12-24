@@ -1,16 +1,21 @@
 {
-  "id": "index",
+  "id": "intro",
   "title": "Introduction",
   "description": "This textbook introduces the foundations of Physical AI,",
-  "source": "@site/docs/index.md",
+  "source": "@site/docs/intro.md",
   "sourceDirName": ".",
-  "slug": "/",
-  "permalink": "/docs/",
+  "slug": "/intro",
+  "permalink": "/docs/intro",
   "draft": false,
   "unlisted": false,
   "tags": [],
   "version": "current",
   "frontMatter": {
     "title": "Introduction"
+  },
+  "sidebar": "textbookSidebar",
+  "next": {
+    "title": "Introduction to Physical AI",
+    "permalink": "/docs/intro-to-physical-ai"
   }
 }
